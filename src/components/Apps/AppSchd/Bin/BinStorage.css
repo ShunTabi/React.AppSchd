@@ -1,0 +1,97 @@
+.BinStorage .BinStorageDataTable {
+ flex: 50%;
+ margin: 10px 0 0 10px;
+ height: 70vh;
+ overflow-y: auto;
+}
+
+.BinStorage .BinStorageDataTable table {
+ width: 100%;
+ border-collapse: separate;
+ border-spacing: 0;
+}
+
+.BinStorage .BinStorageDataTable table thead {
+ position: sticky;
+ top: 0;
+ z-index: 10;
+}
+
+.BinStorage .BinStorageDataTable table thead th {
+ text-align: center;
+ color: white;
+ background: linear-gradient(steelblue, mediumblue);
+ border-style: none;
+ box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+ padding: 10px 0;
+ padding: 3px 7px;
+}
+
+.BinStorage .BinStorageDataTable table tbody tr {
+ transition: 0.2s;
+}
+
+.BinStorage .BinStorageDataTable table tbody tr:hover {
+ background-color: silver;
+ color: white;
+}
+
+.BinStorage .BinStorageDataTable table tbody td {
+ text-align: center;
+ border-left: 1px solid #a8b7c5;
+ border-bottom: 1px solid #a8b7c5;
+ border-top: none;
+ box-shadow: 0px -3px 5px 1px #eee inset;
+ padding: 10px 0;
+}
+
+.BinStorage .BinStorageDataTable table tbody td:last-child {
+ border-right: 1px solid #a8b7c5;
+}
+
+.BinStorage .BinStorageDataTable .ContextMenu {
+ position: fixed;
+ z-index: 20;
+}
+
+.BinStorage .BinStorageDataTable ul {
+ margin: 0;
+ padding: 0;
+}
+
+.BinStorage .BinStorageDataTable ul li {
+ list-style: none;
+ padding: 2px 7px;
+ width: 150px;
+ cursor: pointer;
+ transition: all 0.2s;
+}
+
+.BinStorage .BinStorageDataTable ul li:nth-child(odd) {
+ background-color: paleturquoise;
+}
+
+.BinStorage .BinStorageDataTable ul li:nth-child(even) {
+ background-color: lightcyan;
+}
+
+.BinStorage .BinStorageDataTable ul li:hover {
+ background-color: silver;
+ color: white;
+}
+
+@media screen and (max-width:1000px) {
+ .BinStorage {
+  display: flex;
+  text-align: left;
+  font-size: 10px;
+ }
+}
+
+@media screen and (min-width:1000px) {
+ .BinStorage {
+  display: flex;
+  text-align: left;
+  font-size: 13px;
+ }
+}

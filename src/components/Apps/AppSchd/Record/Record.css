@@ -1,0 +1,46 @@
+.Record nav {
+ background-color: white;
+ padding: 3px 0 3px 0;
+ display: flex;
+}
+
+.Record nav .RecordSelectedName {
+ flex: 15%;
+}
+
+
+.Record nav .RecordNav .btn {
+ background-color: white;
+ transition: all 0.2s;
+ box-shadow: 1px 1px 2px;
+ border-style: none;
+ padding: 3px;
+}
+
+.Record nav .RecordNav .btn:hover {
+ background-color: silver;
+}
+
+.Record nav .RecordNav button img {
+ width: 20px;
+}
+
+@media screen and (min-width:1000px) {
+ .Record nav .RecordNav {
+  flex: 85%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(8, 100px);
+  justify-content: center;
+ }
+}
+
+@media screen and (max-width:1000px) {
+ .Record nav .RecordNav {
+  flex: 85%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(8, 55px);
+  justify-content: center;
+ }
+}

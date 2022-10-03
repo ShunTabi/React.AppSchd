@@ -1,0 +1,11 @@
+.Login {
+    margin-top: 20px;
+}
+
+.Login .LoginArea {
+    text-align: left;
+    margin: 0 auto;
+    width: 300px;
+    box-shadow: 2px 2px 4px;
+    border-style: none;
+}

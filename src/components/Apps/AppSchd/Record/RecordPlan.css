@@ -1,0 +1,116 @@
+.RecordPlan .PlanInputForm fieldset legend {
+ cursor: pointer;
+}
+
+.RecordPlan .PlanDataTable table {
+ width: 100%;
+ border-collapse: separate;
+ border-spacing: 0;
+}
+
+.RecordPlan .PlanDataTable table thead {
+ position: sticky;
+ top: 0;
+ z-index: 10;
+}
+
+.RecordPlan .PlanDataTable table thead th {
+ text-align: center;
+ color: white;
+ background: linear-gradient(steelblue, mediumblue);
+ border-style: none;
+ box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+ padding: 10px 0;
+ padding: 3px 7px;
+}
+
+.RecordPlan .PlanDataTable table tbody tr {
+ transition: 0.2s;
+}
+
+.RecordPlan .PlanDataTable table tbody tr:hover {
+ background-color: silver;
+ color: white;
+}
+
+.RecordPlan .PlanDataTable table tbody td {
+ text-align: center;
+ border-left: 1px solid #a8b7c5;
+ border-bottom: 1px solid #a8b7c5;
+ border-top: none;
+ box-shadow: 0px -3px 5px 1px #eee inset;
+ padding: 10px 0;
+}
+
+.RecordPlan .PlanDataTable table tbody td:last-child {
+ border-right: 1px solid #a8b7c5;
+}
+
+.RecordPlan .PlanDataTable .ContextMenu {
+ position: fixed;
+ z-index: 20;
+}
+
+.RecordPlan .PlanDataTable ul {
+ margin: 0;
+ padding: 0;
+}
+
+.RecordPlan .PlanDataTable ul li {
+ list-style: none;
+ padding: 2px 7px;
+ width: 150px;
+ cursor: pointer;
+ transition: all 0.2s;
+}
+
+.RecordPlan .PlanDataTable ul li:nth-child(odd) {
+ background-color: paleturquoise;
+}
+
+.RecordPlan .PlanDataTable ul li:nth-child(even) {
+ background-color: lightcyan;
+}
+
+.RecordPlan .PlanDataTable ul li:hover {
+ background-color: silver;
+ color: white;
+}
+
+@media screen and (max-width:1000px) {
+ .RecordPlan {
+  display: flex;
+  text-align: left;
+  font-size: 10px;
+ }
+
+ .RecordPlan .PlanInputForm {
+  flex: 35%;
+ }
+
+ .RecordPlan .PlanDataTable {
+  flex: 65%;
+  margin: 10px 0 0 10px;
+  height: 70vh;
+  overflow-y: auto;
+ }
+}
+
+@media screen and (min-width:1000px) {
+ .RecordPlan {
+  display: flex;
+  text-align: left;
+  font-size: 13px;
+ }
+
+ .RecordPlan .PlanInputForm {
+  flex: 30%;
+ }
+
+ .RecordPlan .PlanDataTable {
+  flex: 70%;
+  margin: 10px 0 0 10px;
+  height: 70vh;
+  overflow-y: auto;
+ }
+}

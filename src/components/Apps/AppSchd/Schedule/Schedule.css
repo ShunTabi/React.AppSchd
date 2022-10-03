@@ -1,0 +1,52 @@
+.Schedule nav {
+ background-color: white;
+ padding: 3px 0 3px 0;
+ display: flex;
+}
+
+.Schedule nav .ScheduleSelectedName {
+ flex: 15%;
+}
+
+
+.Schedule nav .ScheduleNav .btn {
+ background-color: white;
+ transition: all 0.2s;
+ box-shadow: 1px 1px 2px;
+ border-style: none;
+ padding: 3px;
+}
+
+
+.Schedule nav .ScheduleNav button img {
+ width: 20px;
+}
+
+@media screen and (min-width:1000px) {
+ .Schedule nav .ScheduleNav {
+  flex: 85%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(8, 100px);
+  justify-content: center;
+ }
+
+ .Schedule nav .ScheduleNav .btn:hover {
+  background-color: silver;
+ }
+}
+
+@media screen and (max-width:1000px) {
+ .Schedule nav .ScheduleNav {
+  flex: 85%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(8, 55px);
+  justify-content: center;
+ }
+
+ .Schedule nav .ScheduleNav .btn:hover {
+  background-color: silver;
+  color: white;
+ }
+}

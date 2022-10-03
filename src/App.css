@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.INVISIBLE {
+  display: none;
+  transition: all 0.2s;
+}
+
+.MINIMIZE {
+  padding: 0;
+  width: 100px;
+  transition: all 0.2s;
+}
+
+.DISABLE:disabled {
+  background-color: gray;
+  box-shadow: none;
+  border: none;
+  opacity: 0.8;
+}

@@ -1,0 +1,78 @@
+.MainLauncher {
+    background-color: royalblue;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.MainLauncher .MainLauncherUserArea {
+    flex: 10%;
+}
+
+.MainLauncher .MainLauncherUserArea span {
+    display: flex;
+    justify-content: center;
+}
+
+.MainLauncher .MainLauncherUserArea img {
+    width: 50px;
+    flex: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.MainLauncher .MainLauncherUserArea label {
+    right: 0;
+    flex: 70%;
+    font-size: 14px;
+}
+
+.MainLauncher .MainLauncherMenuArea button span {
+    display: flex;
+    justify-content: center;
+}
+
+.MainLauncher .MainLauncherMenuArea button span img {
+    place-items: center;
+    width: 30px;
+}
+
+.MainLauncher .MainLauncherMenuArea .valid {
+    background-color: lightskyblue;
+    box-shadow: 2px 2px 4px;
+    border-style: none;
+    transition: all 0.2s;
+}
+
+.MainLauncher .MainLauncherMenuArea .valid:hover {
+    background-color: silver;
+    color: white;
+}
+
+@media screen and (min-width:700px) {
+    .MainLauncher .MainLauncherMenuArea {
+        flex: 90%;
+        display: grid;
+        grid-template-columns: repeat(9, 110px);
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .MainLauncher .MainLauncherMenuArea button span label {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .MainLauncher .MainLauncherMenuArea {
+        flex: 90%;
+        display: grid;
+        grid-template-columns: repeat(9, 50px);
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .MainLauncher .MainLauncherMenuArea button span label {
+        display: none;
+    }
+}

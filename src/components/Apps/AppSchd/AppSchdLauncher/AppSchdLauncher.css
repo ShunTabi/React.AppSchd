@@ -1,0 +1,62 @@
+.AppSchdLauncher nav .AppSchdLauncherSelectedName {
+ flex: 15%;
+}
+
+
+
+.AppSchdLauncher nav .AppSchdLauncherNav .btn:hover {
+ background-color: silver;
+ color: white;
+}
+
+.AppSchdLauncher nav .AppSchdLauncherNav button img {
+ width: 20px;
+}
+
+@media screen and (min-width:1000px) {
+ .AppSchdLauncher nav {
+  background-color: cornflowerblue;
+  padding: 3px 0 3px 0;
+  display: flex;
+ }
+
+ .AppSchdLauncher nav .AppSchdLauncherNav {
+  flex: 85%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(8, 100px);
+  justify-content: center;
+ }
+
+ .AppSchdLauncher nav .AppSchdLauncherNav .btn {
+  background-color: cornflowerblue;
+  box-shadow: 1px 1px 2px;
+  border-style: none;
+  transition: all 0.2s;
+  padding: 3px;
+ }
+}
+
+@media screen and (max-width:1000px) {
+ .AppSchdLauncher nav {
+  background-color: cornflowerblue;
+  padding: 3px 0 5px 0;
+  display: flex;
+ }
+
+ .AppSchdLauncher nav .AppSchdLauncherNav {
+  flex: 85%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(8, 55px);
+  justify-content: center;
+ }
+
+ .AppSchdLauncher nav .AppSchdLauncherNav .btn {
+  background-color: cornflowerblue;
+  box-shadow: 1px 1px 2px;
+  border-style: none;
+  transition: all 0.2s;
+  padding: 3px;
+ }
+}

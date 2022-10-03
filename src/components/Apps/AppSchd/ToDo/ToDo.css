@@ -1,0 +1,45 @@
+.ToDo nav {
+ background-color: white;
+ padding: 3px 0 3px 0;
+ display: flex;
+}
+
+.ToDo nav .ToDoSelectedName {
+ flex: 15%;
+}
+
+.ToDo nav .ToDoNav .btn {
+ background-color: white;
+ transition: all 0.2s;
+ box-shadow: 1px 1px 2px;
+ border-style: none;
+ padding: 3px;
+}
+
+.ToDo nav .ToDoNav .btn:hover {
+ background-color: silver;
+}
+
+.ToDo nav .ToDoNav button img {
+ width: 20px;
+}
+
+@media screen and (min-width:1000px) {
+ .ToDo nav .ToDoNav {
+  flex: 85%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(8, 100px);
+  justify-content: center;
+ }
+}
+
+@media screen and (max-width:1000px) {
+ .ToDo nav .ToDoNav {
+  flex: 85%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(8, 55px);
+  justify-content: center;
+ }
+}
